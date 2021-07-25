@@ -1,0 +1,28 @@
+{
+  "name": "superportfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio created on React JS using the most powerful technologies such as Context API, Typescript,Styled Components, custom configuration and optimization file on Webpack and ES9 features. This project was started at 25 July, 2021.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "JS",
+    "Context",
+    "API",
+    "Typescript",
+    "Hooks",
+    "Functional",
+    "programming",
+    "design",
+    "patterns",
+    "Styled",
+    "Components",
+    "portfolio",
+    "work",
+    "job"
+  ],
+  "author": "yosefleanb@gmail.com",
+  "license": "MIT"
+}
