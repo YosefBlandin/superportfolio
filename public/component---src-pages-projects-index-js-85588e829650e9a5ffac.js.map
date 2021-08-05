@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-projects-index-js-85588e829650e9a5ffac.js","mappings":"0IASA,UANiB,WACb,OACI","sources":["webpack://superportfolio/./src/pages/projects/index.js"],"sourcesContent":["import React from \"react\"\n\n\nconst projects = () => {\n    return (\n        <h1>Projects</h1>\n    )\n}\n\nexport default projects"],"names":[],"sourceRoot":""}

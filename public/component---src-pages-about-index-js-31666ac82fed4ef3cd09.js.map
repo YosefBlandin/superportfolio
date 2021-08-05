@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-about-index-js-31666ac82fed4ef3cd09.js","mappings":"0IASA,UANc,WACV,OACI","sources":["webpack://superportfolio/./src/pages/about/index.js"],"sourcesContent":["import React from \"react\"\n\n\nconst about = () => {\n    return (\n        <h1>About</h1>\n    )\n}\n\nexport default about"],"names":[],"sourceRoot":""}

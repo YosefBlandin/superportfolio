@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksuperportfolio=self.webpackChunksuperportfolio||[]).push([[216],{8184:function(e,r,t){t.r(r);var u=t(7294);r.default=function(){return u.createElement("h1",null,"Projects")}}}]);
+//# sourceMappingURL=component---src-pages-projects-index-js-85588e829650e9a5ffac.js.map
