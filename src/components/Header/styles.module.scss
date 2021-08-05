@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 2rem;
+  padding: 2rem 1rem;
+  background: $bg-secondary-color;
+}

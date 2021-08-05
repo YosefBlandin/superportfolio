@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+@mixin listItemMixin($textColor, $border) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 1.5rem;
+  height: 4rem;
+  color: $textColor;
+  transition: 0.4s;
+  background: black;
+  text-decoration: none;
+  border-bottom: $border;
+  &:hover {
+    color: black;
+    background: #fff;
+    transition: 0.4s;
+  }
+  li {
+    display: flex;
+    align-items: center;
+  }
+  svg {
+    margin-right: 0.3rem;
+  }
+}
+
+.list__item {
+  @include listItemMixin(white, none);
+}
+.list__itemActive {
+  @include listItemMixin($primary-color, 2px solid $primary-color);
+}
