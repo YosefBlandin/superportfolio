@@ -1,7 +1,19 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "superportfolio",
+    title: "Yosef Blandin Portfolio",
+    description: "I am very passionate about Front End Development. Always improving my skills to bring you a better service",
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-react-helmet"],
+  plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
+    
+     {
+    resolve: "gatsby-plugin-google-fonts",
+    options: {
+      fonts: [
+        'raleway'
+      ],
+      display: 'swap'
+    }
+  }],
 };

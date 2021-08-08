@@ -1,9 +1,57 @@
 @import "../../styles/variables.scss";
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-height: 2rem;
-  padding: 2rem 1rem;
-  background: $bg-secondary-color;
+  z-index: 2;
+  width: 100vw;
+  // background: $bg-primary-color;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 2rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 900px;
+  }
+  img {
+    grid-row: 1;
+    grid-column: 1;
+    width: 160px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    position: fixed;
+    top: 0;
+    border-radius: 10px;
+    border-top: none;
+    border: 2px solid black;
+    &Fixed {
+      position: fixed;
+      top: 0;
+    }
+    &__container {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      padding: 1rem 1rem 1.5rem 1rem;
+      max-height: 5.2rem;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    &__container {
+      max-width: 1200px;
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header {
+    &__container {
+      max-width: 1500px;
+    }
+  }
 }

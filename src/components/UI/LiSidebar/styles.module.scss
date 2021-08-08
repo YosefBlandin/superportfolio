@@ -1,6 +1,7 @@
 @import "../../../styles/variables.scss";
 
 @mixin listItemMixin($textColor, $border) {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -8,13 +9,30 @@
   height: 4rem;
   color: $textColor;
   transition: 0.4s;
+  font-weight: 600;
   background: black;
   text-decoration: none;
-  border-bottom: $border;
+  // border-bottom: $border;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 2px;
+    visibility: hidden;
+    width: 1px;
+    background: $primary-color;
+    transition: 0.5s;
+  }
   &:hover {
-    color: black;
-    background: #fff;
-    transition: 0.4s;
+    &::after {
+      height: 2px;
+      visibility: visible;
+      width: 100%;
+      background: #00d1ff;
+      transition: 0.4s;
+    }
   }
   li {
     display: flex;
@@ -30,4 +48,49 @@
 }
 .list__itemActive {
   @include listItemMixin($primary-color, 2px solid $primary-color);
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: $primary-color;
+    visibility: visible;
+    transition: 0.5s;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list__item {
+    background: none;
+    padding-left: 0;
+    padding: 0 2rem;
+    &:hover {
+      color: white;
+      background-color: black;
+    }
+    svg {
+      display: none;
+      font-size: 1.5rem;
+    }
+  }
+  .list__itemActive {
+    background: none;
+    padding-left: 0;
+    padding: 0 2rem;
+    &:hover {
+      color: white;
+      background-color: black;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .list__item {
+    background: none;
+    margin: 0 0.5rem;
+    padding: 0 2rem;
+  }
+  .list__itemActive {
+    padding: 0 2rem;
+    margin: 0 0.5rem;
+  }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { header } from "./styles.module.scss"
+import { header, header__container } from "./styles.module.scss"
 import { SidebarHamburguer } from "../UI/SidebarHamburguer"
 import { Sidebar } from "../Sidebar"
 import logo from "../../images/logoDark.svg"
@@ -11,14 +11,16 @@ export const Header = () => {
     return (
         <>
         <header className={header}>
-                <img
+             <section className={header__container}>
+             <img
                     className="logo"
                     src={logo}
                     alt="Yosef Blandin logo"
                 />
             <SidebarHamburguer {...childrenProps} />
-        </header>
         <Sidebar {...childrenProps} />
+             </section>
+        </header>
         </>
     )
 }

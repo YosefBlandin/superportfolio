@@ -1,14 +1,22 @@
-$primary-color: hsl(168deg 87% 51%);
+$primary-color: hsl(168deg 77% 51%);
 $secondary-color: hsl(171deg 97% 51%);
-$bg-primary-color: #1b1b1b;
-$bg-secondary-color: #333333;
+$bg-primary-color: #000;
+$bg-secondary-color: rgb(27, 27, 27);
+$font-primary-color: #fff;
 @mixin button() {
   border: none;
-  color: black;
-  width: 180px;
-  height: 40px;
+  color: #fff;
+  width: 200px;
+  height: 45px;
   font-weight: bold;
   border-radius: 0.3rem;
-  background: white;
+  background: #03a9f4;
   outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    color: black;
+    background: #fff;
+    transition: 0.2s;
+  }
 }

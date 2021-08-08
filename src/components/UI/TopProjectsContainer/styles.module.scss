@@ -1,0 +1,26 @@
+.grid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  max-width: 900px;
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .grid {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .grid {
+    max-width: 1500px;
+  }
+}

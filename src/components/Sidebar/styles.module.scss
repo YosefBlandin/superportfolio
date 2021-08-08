@@ -1,13 +1,14 @@
 @mixin sidebarStyle {
+  z-index: 5;
   position: fixed;
+  right: -50rem;
   top: 0;
-  right: -11rem;
   bottom: 0;
-  height: 100vh;
+  height: calc(100vh - 64px);
   width: 40vw;
   color: white;
   background-color: black;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .sidebar {
   @include sidebarStyle();
@@ -19,5 +20,23 @@
     flex-direction: column;
     padding: 4rem 0;
     list-style: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sidebar {
+    position: static;
+    flex-direction: row;
+    height: max-content;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    width: fit-content;
+    background: none;
+    &__list {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
   }
 }

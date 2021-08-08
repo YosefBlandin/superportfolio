@@ -26,10 +26,17 @@
     margin-right: $effect;
   }
 }
-
 .sidebarHamburguer {
   @include sidebarHamburguerMix(rgb(255, 255, 255), 0);
 }
 .sidebarHamburguerActive {
-  @include sidebarHamburguerMix($secondary-color, 0.6rem);
+  @include sidebarHamburguerMix($secondary-color, 0.55rem);
+}
+@media screen and (min-width: 768px) {
+  .sidebarHamburguer {
+    display: none;
+  }
+  .sidebarHamburguerActive {
+    display: none;
+  }
 }

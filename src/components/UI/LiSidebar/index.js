@@ -22,7 +22,7 @@ export const LiSidebar = ({ home,projects,contact,about, to, handleClick}) => {
                     activeClassName={list__itemActive}
                 >
                     <li>
-                        <FiHome /> Home
+                        <FiHome /> <span>Home</span>
                      </li>
                 </Link>}
 
@@ -34,7 +34,7 @@ export const LiSidebar = ({ home,projects,contact,about, to, handleClick}) => {
                     activeClassName={list__itemActive}
                 >
                     <li>
-                        <FiStar /> Projects
+                        <FiStar /> <span>Projects</span>
                      </li>
                 </Link>}
 
@@ -46,7 +46,7 @@ export const LiSidebar = ({ home,projects,contact,about, to, handleClick}) => {
                 activeClassName={list__itemActive}
                 >
                     <li>
-                        <FiMessageSquare /> Contact
+                        <FiMessageSquare /> <span>Contact</span>
                     </li>
                 </Link>}
                 
@@ -58,7 +58,7 @@ export const LiSidebar = ({ home,projects,contact,about, to, handleClick}) => {
                 activeClassName={list__itemActive}
                 >
                     <li>
-                        <FiInfo /> About
+                        <FiInfo /> <span>About</span>
                     </li>
                 </Link>}
         </>
