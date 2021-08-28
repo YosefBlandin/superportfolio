@@ -1,19 +1,26 @@
 @mixin sidebarStyle {
+  display: none;
   z-index: 5;
   position: fixed;
-  right: -50rem;
+  right: -20rem;
   top: 0;
   bottom: 0;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 5px);
   width: 40vw;
   color: white;
   background-color: black;
   transition: 0.4s;
 }
+@keyframes sidebar {
+  to {
+    right: 0;
+  }
+}
 .sidebar {
   @include sidebarStyle();
   &Active {
-    right: 0;
+    display: block;
+    animation: 0.25s sidebar forwards;
   }
   &__list {
     display: flex;
@@ -24,6 +31,7 @@
 }
 @media screen and (min-width: 768px) {
   .sidebar {
+    display: block;
     position: static;
     flex-direction: row;
     height: max-content;

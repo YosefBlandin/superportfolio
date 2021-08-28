@@ -1,8 +1,8 @@
 import React from 'react';
-import { title } from "./styles.module.scss";
+import { titleh1 } from "./styles.module.scss";
 
-export const Title = () => {
+export const Title = ({title}) => {
     return (
-        <h1 className={title}>I'm very passionate about Front End Development</h1>
+        <h1 className={titleh1}>{title}</h1>
     )
 }

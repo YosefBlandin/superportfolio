@@ -1,23 +1,23 @@
-.title {
+.titleh1 {
   text-align: center;
   margin-bottom: 1rem;
   font-size: 1rem;
   letter-spacing: 1px;
 }
 @media screen and (min-width: 375px) {
-  .title {
+  .titleh1 {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .title {
+  .titleh1 {
     text-align: start;
     font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 1920px) {
-  .title {
+  .titleh1 {
     text-align: start;
     font-size: 3rem;
   }

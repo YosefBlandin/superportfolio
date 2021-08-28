@@ -15,7 +15,7 @@ export const Header = () => {
              <img
                     className="logo"
                     src={logo}
-                    alt="Yosef Blandin logo"
+                    alt="Yosef Blandin"
                 />
             <SidebarHamburguer {...childrenProps} />
         <Sidebar {...childrenProps} />
