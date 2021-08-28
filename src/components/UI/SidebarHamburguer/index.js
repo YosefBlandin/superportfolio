@@ -4,7 +4,7 @@ import { sidebarHamburguer, sidebarHamburguerActive } from "./styles.module.scss
 
 export const SidebarHamburguer = ({ handleClick, showSidebar }) => {
     return (
-        <button
+        <div
          onClick={handleClick} 
          className={
             showSidebar ? 
@@ -16,6 +16,6 @@ export const SidebarHamburguer = ({ handleClick, showSidebar }) => {
             <div></div>
             <div></div>
             <div></div>
-        </button>
+        </div>
     )
 }
