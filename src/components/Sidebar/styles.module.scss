@@ -1,5 +1,4 @@
 @mixin sidebarStyle {
-  display: none;
   z-index: 5;
   position: fixed;
   right: -20rem;
@@ -11,16 +10,10 @@
   background-color: black;
   transition: 0.4s;
 }
-@keyframes sidebar {
-  to {
-    right: 0;
-  }
-}
 .sidebar {
   @include sidebarStyle();
   &Active {
-    display: block;
-    animation: 0.25s sidebar forwards;
+    right: 0;
   }
   &__list {
     display: flex;

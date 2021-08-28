@@ -12,8 +12,9 @@
   background: none;
   outline: none;
   div {
-    height: 3px;
+    border-top: 2px solid white;
     width: 100%;
+    max-width: 30px;
     background-color: $colors;
     transition: 0.3s ease;
   }
