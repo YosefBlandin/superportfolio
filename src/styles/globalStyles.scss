@@ -6,6 +6,7 @@
 }
 html {
   font-family: raleway;
+  overflow-x: hidden;
 }
 .logo {
   width: 160px;
@@ -14,6 +15,7 @@ html {
 body {
   background: $bg-secondary-color;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
