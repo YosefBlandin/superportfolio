@@ -1,12 +1,10 @@
 import * as React from "react"
 
 import { container, hero, grid, reactImage } from "./styles.module.scss";
-import reactIcon from "../images/reactIcon.svg";
 import { Card } from "../components/UI/Card";
 import { Button } from "../components/UI/Button";
 import { Title } from "../components/UI/Title";
 import { Subtitle } from "../components/UI/Subtitle";
-import { ReactSVG } from 'react-svg';
 
 import { TopProjectsContainer } from "../components/UI/TopProjectsContainer";
 import AtomSvg from "../components/UI/AtomSvg";
@@ -28,8 +26,7 @@ const IndexPage = () => {
             <Button title="See projects" />
           </section>
         </section>
-      </main>
-      <TopProjectsContainer>
+        <TopProjectsContainer>
           <Card />
           <Card />
           <Card />
@@ -40,6 +37,8 @@ const IndexPage = () => {
           <Card />
           <Card />
         </TopProjectsContainer>
+      </main>
+      
       </>
   )
 }

@@ -1,7 +1,4 @@
 @import "../styles/variables.scss";
-path#dot {
-  box-shadow: 0 0 10px 0 red;
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -14,7 +11,6 @@ path#dot {
   color: $font-primary-color;
   .reactImage {
     justify-self: center;
-
     svg {
       width: 100%;
       height: 100%;
