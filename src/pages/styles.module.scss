@@ -31,9 +31,20 @@
   align-items: center;
 }
 @media screen and (min-width: 1024px) {
+  .container {
+    .reactImage {
+      justify-self: flex-end;
+      svg {
+        width: 100%;
+        height: 100%;
+        max-height: 400px;
+        max-width: 400px;
+      }
+    }
+  }
   .grid {
     display: grid;
-    grid-template-columns: 0.9fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     width: 100%;
   }
   .hero {
@@ -44,12 +55,12 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1360px) {
   .container {
     max-width: 1200px;
     min-height: 60vh;
     .grid {
-      height: 50vh;
+      height: max-content;
       .reactImage {
         svg {
           width: 100%;
@@ -63,6 +74,6 @@
 }
 @media screen and (min-width: 1600px) {
   .container {
-    max-width: 1500px;
+    max-width: 1360px;
   }
 }

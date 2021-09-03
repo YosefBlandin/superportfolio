@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 
 const about = () => {
@@ -7,4 +7,6 @@ const about = () => {
     )
 }
 
-export default about
+
+
+export default about;

@@ -9,7 +9,7 @@ import { container, container__close, header, img, title, technologies, descript
 
 export const ProjectDescription = ({ showDescription, setShowDescription}) => {
     return (
-        <article className={container} >
+        <section className={container} >
             <IoCloseSharp onClick={() => setShowDescription(!showDescription)} className={container__close} size="2rem"/>
             <header className={header}>
                 <img className={img} src={imgExample}/>
@@ -42,6 +42,6 @@ JavaScript engines were originally used only in web browsers, but they are now c
 
 Although there are similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design.</p>
             </section>
-        </article>
+        </section>
     )
 }

@@ -26,16 +26,20 @@ const IndexPage = () => {
             <Button title="See projects" />
           </section>
         </section>
+        
         <TopProjectsContainer>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card 
+          title="Ultra Morty" 
+          subtitle="Redux, React JS, Sass"
+          />
+          <Card
+           title="Blandin's chat"
+           subtitle="Next JS, Socket IO, MongoDB"
+           />
+          <Card 
+          title="Weatherstonishing"
+          subtitle="Next JS, Sass, Openweather API"
+          />
         </TopProjectsContainer>
       </main>
       

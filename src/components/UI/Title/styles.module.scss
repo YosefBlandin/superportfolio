@@ -13,6 +13,12 @@
 @media screen and (min-width: 1024px) {
   .titleh1 {
     text-align: start;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .titleh1 {
+    text-align: start;
     font-size: 2.5rem;
   }
 }
