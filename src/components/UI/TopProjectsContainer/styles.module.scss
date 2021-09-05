@@ -59,16 +59,16 @@
     }
   }
 }
-@media screen and (min-width: 1200px) {
-  .projectsContainer {
-    article:nth-child(1) {
-      transform: translateY(-13rem);
-    }
-    article:nth-child(3) {
-      transform: translateY(-13rem);
-    }
-  }
-}
+// @media screen and (min-width: 1300px) {
+//   .projectsContainer {
+//     article:nth-child(1) {
+//       transform: translateY(-13rem);
+//     }
+//     article:nth-child(3) {
+//       transform: translateY(-13rem);
+//     }
+//   }
+// }
 @media screen and (min-width: 1440px) {
   .projectsContainer {
     article:nth-child(1) {

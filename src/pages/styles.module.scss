@@ -30,6 +30,40 @@
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    .hero {
+      button {
+        position: relative;
+        &:hover {
+          &::after {
+            opacity: 0;
+            border-right: 2px solid rgb(177, 133, 247);
+            border-bottom: 2px solid rgb(177, 133, 247);
+            transform: translate(-15px, -20px);
+            transition: 0.3s;
+          }
+        }
+        &::after {
+          left: 0.9rem;
+          bottom: -1rem;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          border-left: 1px solid #673ab7;
+          border-bottom: 1px solid #673ab7;
+          border-right: 1px solid #673ab7;
+          border-top: 1px solid #673ab7;
+          transition: 0.3s;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 1024px) {
   .container {
     .reactImage {
