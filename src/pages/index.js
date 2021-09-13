@@ -5,9 +5,11 @@ import { Card } from "../components/UI/Card";
 import { Button } from "../components/UI/Button";
 import { Title } from "../components/UI/Title";
 import { Subtitle } from "../components/UI/Subtitle";
+import yosefImg from "../images/yosefblandin.jpg";
 
 import { TopProjectsContainer } from "../components/UI/TopProjectsContainer";
 import AtomSvg from "../components/UI/AtomSvg";
+import { AboutContainer } from "../components/UI/AboutContainer";
 // markup
 const IndexPage = () => {
 
@@ -41,6 +43,16 @@ const IndexPage = () => {
           subtitle="Next JS, Sass, Openweather API"
           />
         </TopProjectsContainer>
+
+        <AboutContainer>
+          <img src={yosefImg} alt="Yosef Blandin"/>
+          <div></div>
+          <section>
+            <h2>With a good experience working on startups developing features with teams</h2>
+            <p>I know how to solve problems and how to learn to learn, due as a Software Developer our mission is to provide solutions in order to impulse the mission of the company</p>
+          </section>
+        </AboutContainer>
+
       </main>
       
       </>

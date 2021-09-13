@@ -1,0 +1,40 @@
+@import "../../../styles/variables.scss";
+
+.aboutSection {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 3rem 0;
+    img {
+        width: 340px;
+        max-height: 580px;
+        object-fit: cover;
+        opacity: .8;
+        border-radius: 20px 0 0 20px;
+    }
+    div {
+        position: absolute;
+        top: 0;
+        left: 13rem;
+        height: 580px;
+        width: 85%;
+        padding: 0rem 0rem;
+        filter: blur(10px);
+        // background-color: rgba($bg-secondary-color, .65);
+        background: linear-gradient(to left, rgb(40,40,40), $bg-secondary-color 20%, rgba(0,0,0, .2) 70%);
+    }
+    section {
+        position: absolute;
+        top: 3rem;
+        left: 18rem;
+        h2 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+        }
+        p {
+            margin-top: 3rem;
+            font-size: 1.8rem;
+            color: rgb(228, 228, 228);
+        }
+    }
+}
