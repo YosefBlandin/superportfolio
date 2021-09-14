@@ -3,38 +3,154 @@
 .aboutSection {
     position: relative;
     display: flex;
-    width: 100%;
-    margin: 3rem 0;
-    img {
-        width: 340px;
-        max-height: 580px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9rem;
+    &__imgMobile {
+        max-width: 80%;
         object-fit: cover;
         opacity: .8;
-        border-radius: 20px 0 0 20px;
+        border-radius: 20px;
+    }
+    &__imgDesktop {
+        display: none;
     }
     div {
         position: absolute;
-        top: 0;
-        left: 13rem;
-        height: 580px;
-        width: 85%;
-        padding: 0rem 0rem;
+        top: 10.5rem;
         filter: blur(10px);
+        height: 250px;
+        width: 90%;
         // background-color: rgba($bg-secondary-color, .65);
-        background: linear-gradient(to left, rgb(40,40,40), $bg-secondary-color 20%, rgba(0,0,0, .2) 70%);
+        background: linear-gradient(to top, rgb(30,30,30), $bg-secondary-color 5%, rgba(0,0,0, .2) 90%);
     }
     section {
         position: absolute;
-        top: 3rem;
-        left: 18rem;
+        top: 12rem;
+        width: 80%;
+        text-align: center;
         h2 {
-            font-size: 3rem;
-            letter-spacing: 3px;
+            font-size: 1.3rem;
         }
         p {
-            margin-top: 3rem;
-            font-size: 1.8rem;
-            color: rgb(228, 228, 228);
+            margin-top: 1rem;
+            line-height: 1.4rem;
+        }
+        button {
+            margin-top: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .aboutSection {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 5rem;
+        width: 100%;
+        padding: 0 1rem;
+        &__imgMobile {
+            max-width: 380px;
+            object-fit: cover;
+            opacity: .8;
+            border-radius: 20px;
+        }
+        &__imgDesktop {
+            display: none;
+        }
+        div {
+            position: absolute;
+            top: 14rem;
+            filter: blur(10px);
+            height: 250px;
+            width: 80%;
+            // background-color: rgba($bg-secondary-color, .65);
+            background: linear-gradient(to top, rgb(40,40,40), $bg-secondary-color 40%, rgba(0,0,0, .2) 90%);
+        }
+        section {
+            position: absolute;
+            top: 15rem;
+            left: 9.5rem;
+            width: 60%;
+            h2 {
+                font-size: 1.6rem;
+            }
+            p {
+                font-size: 1.3rem;
+                margin-top: 1.4rem;
+                line-height: 1.6rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutSection {
+        position: relative;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 3rem 0;
+        &__imgMobile {
+            display: none;
+        }
+        &__imgDesktop {
+            display: block;
+            width: 340px;
+            max-height: 580px;
+            border-radius: 20px 0 0 20px;
+        }
+        div {
+            position: absolute;
+            top: 0;
+            left: 13rem;
+            height: 590px;
+            width: 85%;
+            padding: 0rem 0rem;
+            filter: blur(10px);
+            // background-color: rgba($bg-secondary-color, .65);
+            background: linear-gradient(to left, #673ab7, $bg-secondary-color 40%, rgba(0,0,0, .2) 90%);
+        }
+        section {
+            position: absolute;
+            top: 0.5rem;
+            left: 26rem;
+            text-align: start;
+            h2 {
+                font-size: 3rem;
+                letter-spacing: 3px;
+            }
+            p {
+                font-size: 1.8rem;
+                margin-top: 3rem;
+                line-height: initial;
+                color: rgb(228, 228, 228);
+            }
+            button {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .aboutSection {
+        section {
+            h2 {
+                font-size: 3rem;
+                letter-spacing: 3px;
+            }
+            p {
+                font-size: 1.8rem;
+                margin-top: 3rem;
+                line-height: initial;
+                color: rgb(228, 228, 228);
+            }
+            button {
+                margin-top: 3rem;
+            }
         }
     }
 }
