@@ -1,4 +1,32 @@
 @import "../../../styles/variables.scss";
+
+@keyframes spinnerLoad {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinnerLoadReverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@mixin spinner {
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 25px;
+  border: 3px dashed whitesmoke;
+}
+
 .button {
   @include button;
+  &__spinner1 {
+    @include spinner();
+    transform: rotate(45deg);
+    animation: 1.4s spinnerLoad infinite;
+  }
+  &__spinner2 {
+    @include spinner();
+    animation: 1.4s spinnerLoadReverse infinite;
+  }
 }

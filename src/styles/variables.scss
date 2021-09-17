@@ -4,6 +4,9 @@ $bg-primary-color: #000;
 $bg-secondary-color: rgb(27, 27, 27);
 $font-primary-color: #fff;
 @mixin button() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   color: #fff;
   width: 250px;

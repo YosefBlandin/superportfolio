@@ -1,0 +1,152 @@
+@import "../../../styles/variables.scss";
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@mixin Icon() {
+  z-index: 2;
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    transform: scale(1.09);
+  }
+}
+
+
+.contactOptions {
+  visibility: hidden;
+  position: fixed;
+  top: 5rem;
+  left: calc(50% - 160px);
+  width: 320px;
+  height: max-content;
+  max-height: max-content;
+  border-radius: 1rem;
+  padding-top: 3.8rem;
+  border: 2px solid $primary-color;
+  background-color: rgb(56, 56, 56);
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+  &__active {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+    transition: 0.3s;
+    pointer-events: all;
+  }
+  h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+  }
+  &__back {
+    @include Icon;
+    left: 1rem;
+    top: 1rem;
+
+  }
+  &__close {
+    @include Icon;
+    right: 1rem;
+    top: 0.8rem;
+    border-radius: 50%;
+    
+  }
+  &__textError {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 148, 91);
+    margin: 0;
+    animation: fadeOut 1s forwards;
+    svg {
+      margin-right: 0.25rem;
+      font-size: 1.3rem;
+    }
+  }
+  &__textSuccess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(130, 255, 172);
+    margin: 0;
+    animation: fadeOut 1s forwards;
+    svg {
+      margin-right: 0.25rem;
+      font-size: 1.3rem;
+    }
+  }
+  &__mailSection {
+    padding-bottom: 1rem;
+    animation: 1s fadeOut backwards;
+    form {
+      padding: 0.4rem 1.5rem;
+      label {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin: 1rem 0;
+      }
+      input {
+        height: 30px;
+        padding-left: 0.4rem;
+        margin-top: 0.5rem;
+      }
+      textarea {
+        height: 80px;
+        padding-left: 0.4rem;
+        padding-top: 0.7rem;
+        margin-top: 0.5rem;
+      }
+      button {
+        margin-top: 1.2rem;
+        height: 48px;
+        width: 100%;
+        font-size: 1.1rem;
+        background-color: #46c3db;
+      }
+    }
+  }
+  &__ul {
+    padding-top: 1.8rem;
+    list-style: none;
+    font-weight: bold;
+    animation: 1s fadeOut backwards;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 0;
+      height: 103.8px;
+      color: rgb(247, 247, 247);
+      border-top: 2px solid gray;
+      transition: 0.3s;
+      letter-spacing: 0.1rem;
+      cursor: pointer;
+      &:hover {
+        transition: 0.3s;
+        border-top: 2px solid whitesmoke;
+        background-color: #673ab7;
+      }
+      svg {
+        font-size: 2rem;
+        color: $primary-color;
+        margin-bottom: 0.5rem;
+      }
+    }
+    li:nth-child(3) {
+      border-radius: 0 0 1rem 1rem;
+    }
+  }
+}
